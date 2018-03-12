@@ -81,8 +81,8 @@ class mySocket_server(s.socket,water_alarm_sql):
         __name = '[server_receive]'
         chunks = []
         bytes_rcvd = 0
-        while bytes_rcvd < self.MSGLEN:
-            chunk = client_socket.recv(min(self.MSGLEN - bytes_rcvd, 2048)).decode()
+        while bytes_rcvd < self.msg_len:
+            chunk = client_socket.recv(min(self.msg_len - bytes_rcvd, 2048)).decode()
             if chunk == '':
                 raise RuntimeError(__name, "socket connection broken")
             chunks.append(chunk)
@@ -103,7 +103,7 @@ class mySocket_server(s.socket,water_alarm_sql):
                 try:  # checks if client exists
                     rcvd_data = []
                     for client in [i[0] for i in self.clients]:
-                        rcvd_data.append(self.server_receive(client).split(sep='\n'))
+                        rcvd_data.append(self.server_receive(client))#.split(sep='\n'))
                         sql.replace_row(rcvd_data[-1][0], datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),
                                              rcvd_data[-1][1],rcvd_data[-1][2])
                         sql.show_table()

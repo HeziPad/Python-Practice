@@ -1,10 +1,5 @@
-from wateralarm import mySocket
-
+from wateralarm_client import mySocket_client
 
 if __name__ == "__main__":
-    ka_msg = 'KA'
-    with mySocket() as client_socket:
-        print('connecting...')
-        client_socket.connect(('localhost', 5432))
-        print('connected!')
-        client_socket.client_handler(ka_msg)
+    client_socket = mySocket_client('localhost',5432,'KA')
+    client_socket.run_client()
