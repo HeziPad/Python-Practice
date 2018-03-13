@@ -1,8 +1,8 @@
 # coding=utf-8
 import sqlite3
-import datetime
 
-class water_alarm_sql():
+
+class WaterAlarmSql:
     """custom SQL handler for the purpose of water alarm project"""
     def __init__(self, path):
         __name = "[water_alarm_sql __init__]"
