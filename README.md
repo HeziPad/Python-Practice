@@ -1,5 +1,5 @@
 # Python-Practice
-Server-client, sockets, threading, sql - OOD
+Server-client, sockets, threading, SQL, OOD
 
 Project objective:
 
