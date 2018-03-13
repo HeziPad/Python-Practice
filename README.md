@@ -29,4 +29,4 @@ In this implementation:
 
 Notes:
 
-  This implementation is rather simple. There is NOT enough checks of data integrity NOT all "corners" are covered, since it was written for the purpose of learning only.
+  This implementation is rather simple. There is NOT enough checks of data integrity and NOT all "corners" are covered, since it was written for the purpose of learning only.
