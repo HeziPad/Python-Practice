@@ -26,7 +26,10 @@ In this implementation:
   "wateralarm_client.py" - Class used by client. 
   "wateralarm_server.py" - Class used by server. Inherits from 'wateralarm_sql.py'
   "wateralarm_sql.py" - Class used by server.
-
+  
+  Files to be on server: "server.py", "wateralarm_server.py", "wateralarm_sql.py".
+  Files to be on client: "client.py", "client_status.txt", "wateralarm_client.py"
+  
 Notes:
 
   This implementation is rather simple. There is NOT enough checks of data integrity and NOT all "corners" are covered, since it was written for the purpose of learning only.
