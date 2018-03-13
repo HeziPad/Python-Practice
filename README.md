@@ -20,16 +20,16 @@ Details:
 
 In this implementation:
 
-  "client.py" - Run this on a Water-station client. Make sure arguments are valid (representing an active server).
-  "client_status.txt" - Contains Water-station client status. Make sure not to change format of data (i.e. '3 chars,char,char')
-  "server.py" - Run this on (to be) a server. Make sure arguments are valid (unused port, path to database is valid).
-  "wateralarm_client.py" - Class used by client. 
-  "wateralarm_server.py" - Class used by server. Inherits from 'wateralarm_sql.py'
-  "wateralarm_sql.py" - Class used by server.
+  1. "client.py" - Run this on a Water-station client. Make sure arguments are valid (representing an active server).
+  2. "client_status.txt" - Contains Water-station client status. Make sure not to change format of data (i.e. '3 chars,char,char')
+  3. "server.py" - Run this on (to be) a server. Make sure arguments are valid (unused port, path to database is valid).
+  4. "wateralarm_client.py" - Class used by client. 
+  5. "wateralarm_server.py" - Class used by server. Inherits from 'wateralarm_sql.py'
+  6. "wateralarm_sql.py" - Class used by server.
   
-  Files to be on server: "server.py", "wateralarm_server.py", "wateralarm_sql.py".
-  Files to be on client: "client.py", "client_status.txt", "wateralarm_client.py"
+  - Files to be on server: "server.py", "wateralarm_server.py", "wateralarm_sql.py".
+  - Files to be on client: "client.py", "client_status.txt", "wateralarm_client.py".
   
 Notes:
 
-  This implementation is rather simple. There is NOT enough checks of data integrity and NOT all "corners" are covered, since it was written for the purpose of learning only.
+  - This implementation is rather simple. There is NOT enough checks of data integrity and NOT all "corners" are covered, since it was written for the purpose of learning only.
