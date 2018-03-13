@@ -3,7 +3,7 @@ Server-client, sockets, threading, sql - OOD
 
 Project objective:
 
-  Creating a "Water station" clients, and a server which communicates with the clients, while using SQL database for gathered info.
+  Creating a server which communicates with "Water station" clients, while using SQL database for gathered info.
   Water-stations have water sensor, and can trigger an alarm upon detection of misfunctioning.
 
 Details:
